@@ -2,38 +2,8 @@ import React from 'react';
 import { ThemeProvider, useTheme } from 'next-themes';
 import './App.css';
 
-const projects = [
-  {
-    id: 1,
-    title: 'AI-Driven Resume Orchestration Engine',
-    role: 'Python, React, Gemini API, SQL, JavaScript (ES6+)',
-    description: 'A full-stack platform that maps user profile data against job criteria to generate tailored resumes using the Gemini API, backed by a normalized SQL schema.',
-    type: 'View on GitHub',
-    image: 'https://images.unsplash.com/photo-1530435460869-d13625c69bbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwd2Vic2l0ZSUyMHRlbXBsYXRlfGVufDF8fHx8MTc4MzEwMTE0N3ww&ixlib=rb-4.1.0&q=80&w=1080',
-    link: 'https://github.com/jae-n/ai-resume-builder',
-  },
-  {
-    id: 2,
-    title: 'Combat Analytics Platform',
-    role: 'Python, NumPy, OpenCV, MediaPipe',
-    description: 'A computer vision pipeline that extracts real-time pose and trajectory data from video, using vectorized NumPy operations to sustain sub-30ms processing latency.',
-    type: 'View on GitHub',
-    image: 'https://images.unsplash.com/photo-1770457732717-c0f2deea07e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwd2Vic2l0ZSUyMHRlbXBsYXRlfGVufDF8fHx8MTc4MzEwMTE0N3ww&ixlib=rb-4.1.0&q=80&w=1080',
-    link: 'https://github.com/jae-n/fightAnalysis',
-  },
-  {
-    id: 3,
-    title: '3D Physics Engine',
-    role: 'C++, OpenGL',
-    description: 'A rigid body physics simulation built from scratch, featuring AABB collision detection and impulse-based resolution for real-time object interactions.',
-    type: 'View on GitHub',
-    image: 'https://images.unsplash.com/photo-1762503203754-62c5a0c969d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwd2Vic2l0ZSUyMHRlbXBsYXRlfGVufDF8fHx8MTc4MzEwMTE0N3ww&ixlib=rb-4.1.0&q=80&w=1080',
-    link: 'https://github.com/jae-n/PhysicEngine',
-  },
-];
-
 const experience = [
-    {
+  {
     id: 1,
     company: 'Raytheon',
     role: 'Software Engineer',
@@ -41,21 +11,21 @@ const experience = [
     location: 'McKinney, TX',
     description: ['Future role, no description available yet.'],
   },
- {
-  id: 1,
-  company: 'Starbucks',
-  role: 'Barista', // adjust title if different
-  dates: 'Jun 2026 – Present',
-  location: 'Southlake, TX',
-  description: [
-    'Prepared and served beverages and food items to order while maintaining consistent quality and speed during high-volume rush periods.',
-    'Delivered attentive customer service in a fast-paced environment, handling orders, payments, and customer questions with accuracy.',
-    'Maintained cleanliness and organization of the workstation and stockroom in compliance with health and safety standards.',
-    'Collaborated with team members to keep operations running smoothly during peak hours and support store goals.',
-  ],
-},
   {
     id: 2,
+    company: 'Starbucks',
+    role: 'Barista',
+    dates: 'Jun 2026 – Present',
+    location: 'Southlake, TX',
+    description: [
+      'Prepared and served beverages and food items to order while maintaining consistent quality and speed during high-volume rush periods.',
+      'Delivered attentive customer service in a fast-paced environment, handling orders, payments, and customer questions with accuracy.',
+      'Maintained cleanliness and organization of the workstation and stockroom in compliance with health and safety standards.',
+      'Collaborated with team members to keep operations running smoothly during peak hours and support store goals.',
+    ],
+  },
+  {
+    id: 3,
     company: 'Sybor Tech Inc',
     role: 'Systems Engineer Intern',
     dates: 'Jan 2026 – Present',
@@ -68,7 +38,7 @@ const experience = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     company: 'UTD Systems & Security Lab',
     role: 'Undergraduate Researcher',
     dates: 'Jan 2026 – May 2026',
@@ -79,7 +49,7 @@ const experience = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     company: 'Walmart',
     role: 'Sales Associate',
     dates: 'Aug 2019 – Jun 2026',
@@ -118,6 +88,36 @@ const education = [
   },
 ];
 
+const projects = [
+  {
+    id: 1,
+    title: 'AI-Driven Resume Orchestration Engine',
+    role: 'Python, React, Gemini API, SQL, JavaScript (ES6+)',
+    description: 'A full-stack platform that maps user profile data against job criteria to generate tailored resumes using the Gemini API, backed by a normalized SQL schema.',
+    type: 'View on GitHub',
+    image: 'https://images.unsplash.com/photo-1530435460869-d13625c69bbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwd2Vic2l0ZSUyMHRlbXBsYXRlfGVufDF8fHx8MTc4MzEwMTE0N3ww&ixlib=rb-4.1.0&q=80&w=1080',
+    link: 'https://github.com/jae-n/ai-resume-builder',
+  },
+  {
+    id: 2,
+    title: 'Combat Analytics Platform',
+    role: 'Python, NumPy, OpenCV, MediaPipe',
+    description: 'A computer vision pipeline that extracts real-time pose and trajectory data from video, using vectorized NumPy operations to sustain sub-30ms processing latency.',
+    type: 'View on GitHub',
+    image: 'https://images.unsplash.com/photo-1770457732717-c0f2deea07e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwd2Vic2l0ZSUyMHRlbXBsYXRlfGVufDF8fHx8MTc4MzEwMTE0N3ww&ixlib=rb-4.1.0&q=80&w=1080',
+    link: 'https://github.com/jae-n/fightAnalysis',
+  },
+  {
+    id: 3,
+    title: '3D Physics Engine',
+    role: 'C++, OpenGL',
+    description: 'A rigid body physics simulation built from scratch, featuring AABB collision detection and impulse-based resolution for real-time object interactions.',
+    type: 'View on GitHub',
+    image: 'https://images.unsplash.com/photo-1762503203754-62c5a0c969d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwd2Vic2l0ZSUyMHRlbXBsYXRlfGVufDF8fHx8MTc4MzEwMTE0N3ww&ixlib=rb-4.1.0&q=80&w=1080',
+    link: 'https://github.com/jae-n/PhysicEngine',
+  },
+];
+
 function ThemeToggle() {
   const { theme, setTheme } = useTheme();
 
@@ -141,10 +141,10 @@ export default function App() {
           <div className="nav-left">
             <a href="#" className="nav-brand">James Nguyen</a>
             <div className="nav-links">
-              <a href="#projects" className="nav-link">Projects</a>
-              <a href="#experience" className="nav-link">Experience</a>
-              <a href="#education" className="nav-link">Education</a>
               <a href="#bio" className="nav-link">Bio</a>
+              <a href="#education" className="nav-link">Education</a>
+              <a href="#experience" className="nav-link">Experience</a>
+              <a href="#projects" className="nav-link">Projects</a>
               <a href="#contact" className="nav-link">Contact</a>
             </div>
           </div>
@@ -186,6 +186,8 @@ export default function App() {
             </div>
           </section>
 
+          
+
           <section id="education" className="education-section border-top">
             <h2 className="section-heading">Education</h2>
             <div className="education-list">
@@ -209,16 +211,42 @@ export default function App() {
 
           
 
+          <section id="experience" className="experience-section border-top">
+            <h2 className="section-heading">Experience</h2>
+            <div className="experience-list">
+              {experience.map((job) => (
+                <div key={job.id} className="experience-item">
+                  <div className="experience-header">
+                    <h3 className="experience-role">{job.role}</h3>
+                    <span className="experience-dates">{job.dates}</span>
+                  </div>
+                  <span className="experience-company">
+                    {job.company}{job.location ? ` · ${job.location}` : ''}
+                  </span>
+                  {job.description.length > 0 && (
+                    <ul className="experience-bullets">
+                      {job.description.map((line, i) => (
+                        <li key={i}>{line}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
+            </div>
+          </section>
+
           <section id="projects" className="projects-section border-top">
+            <h2 className="section-heading">Projects</h2>
             <div className="projects-grid">
               {projects.map((project) => (
-                <a key={project.id} href={project.link} className="project-card">
+                <a key={project.id} href={project.link} target="_blank" rel="noopener noreferrer" className="project-card">
                   <div className="project-image-wrapper">
                     <img src={project.image} alt={project.title} className="project-image" />
                   </div>
                   <div className="project-info">
                     <span className="project-role">{project.role}</span>
                     <h3 className="project-title">{project.title}</h3>
+                    <p className="project-description">{project.description}</p>
                     <span className="project-type">{project.type}</span>
                   </div>
                 </a>
@@ -233,9 +261,9 @@ export default function App() {
                 <li><a href="https://www.linkedin.com/in/james-nguyen-b915a5233/" target="_blank" rel="noopener noreferrer" className="social-link-item">LinkedIn</a></li>
                 <li><a href="https://github.com/jae-n" target="_blank" rel="noopener noreferrer" className="social-link-item">GitHub</a></li>
               </ul>
-              
+
               <a href="mailto:jamesn6708@gmail.com" className="contact-email">
-                jamesn6708@gmail.com <span className="wave"></span>
+                jamesn6708@gmail.com <span className="wave">👋</span>
               </a>
             </div>
           </section>
