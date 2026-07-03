@@ -1,6 +1,13 @@
 import React from 'react';
 import { ThemeProvider, useTheme } from 'next-themes';
+import bjjImage from '../image/bjj.webp';
+import aiImage from '../image/ai.png';
+import glImage from '../image/gl.png';
+import ufcImage from '../image/ufc.avif';
 import './App.css';
+
+
+
 
 const experience = [
   {
@@ -95,7 +102,7 @@ const projects = [
     role: 'Python, React, Gemini API, SQL, JavaScript (ES6+)',
     description: 'A full-stack platform that maps user profile data against job criteria to generate tailored resumes using the Gemini API, backed by a normalized SQL schema.',
     type: 'View on GitHub',
-    image: 'https://images.unsplash.com/photo-1530435460869-d13625c69bbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwd2Vic2l0ZSUyMHRlbXBsYXRlfGVufDF8fHx8MTc4MzEwMTE0N3ww&ixlib=rb-4.1.0&q=80&w=1080',
+    image: aiImage,
     link: 'https://github.com/jae-n/ai-resume-builder',
   },
   {
@@ -104,7 +111,7 @@ const projects = [
     role: 'Python, NumPy, OpenCV, MediaPipe',
     description: 'A computer vision pipeline that extracts real-time pose and trajectory data from video, using vectorized NumPy operations to sustain sub-30ms processing latency.',
     type: 'View on GitHub',
-    image: 'https://images.unsplash.com/photo-1770457732717-c0f2deea07e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwd2Vic2l0ZSUyMHRlbXBsYXRlfGVufDF8fHx8MTc4MzEwMTE0N3ww&ixlib=rb-4.1.0&q=80&w=1080',
+    image: ufcImage,
     link: 'https://github.com/jae-n/fightAnalysis',
   },
   {
@@ -113,7 +120,7 @@ const projects = [
     role: 'C++, OpenGL',
     description: 'A rigid body physics simulation built from scratch, featuring AABB collision detection and impulse-based resolution for real-time object interactions.',
     type: 'View on GitHub',
-    image: 'https://images.unsplash.com/photo-1762503203754-62c5a0c969d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwd2Vic2l0ZSUyMHRlbXBsYXRlfGVufDF8fHx8MTc4MzEwMTE0N3ww&ixlib=rb-4.1.0&q=80&w=1080',
+    image: glImage,
     link: 'https://github.com/jae-n/PhysicEngine',
   },
 ];
@@ -158,7 +165,7 @@ export default function App() {
             </h1>
             <div className="hero-content">
               <p className="hero-subtitle">
-                I recently graduated with a degree in Computer Science from The University of Texas at Dallas. I'm passionate about building clean, functional software and always looking to learn new tools and technologies.
+                I'm a Computer Science graduate from The University of Texas at Dallas with a focus on embedded systems and full-stack development. I enjoy working close to the hardware — writing low-level code that talks to sensors and microcontrollers — as well as building complete web applications from the database up.
               </p>
               <p className="hero-subtitle mt-gap">
                 I'm currently looking for full-time software engineering opportunities. Feel free to <a href="#contact" className="text-link">reach out</a> — I'd love to hear about your team and what you're building.
@@ -174,7 +181,7 @@ export default function App() {
                   I'm James, a new grad software engineer based in the Dallas–Fort Worth area. I studied Computer Science at UT Dallas, with coursework spanning networks, databases, AI, and systems programming — and I like putting that foundation to work on projects that touch computer vision, backend systems, and low-level programming.
                 </p>
                 <p className="bio-text mt-gap">
-                  Outside of coursework, I've built things ranging from a physics engine in C++ to an AI-powered resume tool, and I've spent time in a research lab digging into binary analysis and vulnerability detection. I like understanding how systems work at a deep level, then building something useful on top of that understanding.
+                  Outside of coursework, I've built things ranging from a physics engine in C++ to an AI-powered resume tool, and I've spent time in a research lab digging into binary analysis and vulnerability detection. When I'm not coding, you'll usually find me on the mats training Brazilian Jiu-Jitsu or outside hiking, camping, or just finding an excuse to be outdoors
                 </p>
               </div>
               <div className="bio-block">
@@ -182,6 +189,11 @@ export default function App() {
                 <p className="bio-text">
                   I'm a new grad eager to contribute to a team where I can grow as a software engineer. I enjoy full-stack development and I'm comfortable picking up new frameworks and languages quickly.
                 </p>
+                <img
+                  src={bjjImage}
+                  alt="Training Brazilian Jiu-Jitsu"
+                  className="bio-image mt-gap"
+                />
               </div>
             </div>
           </section>
@@ -263,7 +275,7 @@ export default function App() {
               </ul>
 
               <a href="mailto:jamesn6708@gmail.com" className="contact-email">
-                jamesn6708@gmail.com <span className="wave">👋</span>
+                jamesn6708@gmail.com <span className="wave"></span>
               </a>
             </div>
           </section>
