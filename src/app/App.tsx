@@ -5,27 +5,116 @@ import './App.css';
 const projects = [
   {
     id: 1,
-    title: 'Project Title 1',
-    role: 'Your Role',
+    title: 'AI-Driven Resume Orchestration Engine',
+    role: 'Python, React, Gemini API, SQL, JavaScript (ES6+)',
+    description: 'A full-stack platform that maps user profile data against job criteria to generate tailored resumes using the Gemini API, backed by a normalized SQL schema.',
     type: 'View on GitHub',
     image: 'https://images.unsplash.com/photo-1530435460869-d13625c69bbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwd2Vic2l0ZSUyMHRlbXBsYXRlfGVufDF8fHx8MTc4MzEwMTE0N3ww&ixlib=rb-4.1.0&q=80&w=1080',
-    link: 'https://github.com/jae-n',
+    link: 'https://github.com/jae-n/ai-resume-builder',
   },
   {
     id: 2,
-    title: 'Project Title 2',
-    role: 'Your Role',
+    title: 'Combat Analytics Platform',
+    role: 'Python, NumPy, OpenCV, MediaPipe',
+    description: 'A computer vision pipeline that extracts real-time pose and trajectory data from video, using vectorized NumPy operations to sustain sub-30ms processing latency.',
     type: 'View on GitHub',
     image: 'https://images.unsplash.com/photo-1770457732717-c0f2deea07e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwd2Vic2l0ZSUyMHRlbXBsYXRlfGVufDF8fHx8MTc4MzEwMTE0N3ww&ixlib=rb-4.1.0&q=80&w=1080',
-    link: 'https://github.com/jae-n',
+    link: 'https://github.com/jae-n/fightAnalysis',
   },
   {
     id: 3,
-    title: 'Project Title 3',
-    role: 'Your Role',
+    title: '3D Physics Engine',
+    role: 'C++, OpenGL',
+    description: 'A rigid body physics simulation built from scratch, featuring AABB collision detection and impulse-based resolution for real-time object interactions.',
     type: 'View on GitHub',
     image: 'https://images.unsplash.com/photo-1762503203754-62c5a0c969d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwd2Vic2l0ZSUyMHRlbXBsYXRlfGVufDF8fHx8MTc4MzEwMTE0N3ww&ixlib=rb-4.1.0&q=80&w=1080',
-    link: 'https://github.com/jae-n',
+    link: 'https://github.com/jae-n/PhysicEngine',
+  },
+];
+
+const experience = [
+    {
+    id: 1,
+    company: 'Raytheon',
+    role: 'Software Engineer',
+    dates: 'Starting Jan 2027',
+    location: 'McKinney, TX',
+    description: ['Future role, no description available yet.'],
+  },
+ {
+  id: 1,
+  company: 'Starbucks',
+  role: 'Barista', // adjust title if different
+  dates: 'Jun 2026 – Present',
+  location: 'Southlake, TX',
+  description: [
+    'Prepared and served beverages and food items to order while maintaining consistent quality and speed during high-volume rush periods.',
+    'Delivered attentive customer service in a fast-paced environment, handling orders, payments, and customer questions with accuracy.',
+    'Maintained cleanliness and organization of the workstation and stockroom in compliance with health and safety standards.',
+    'Collaborated with team members to keep operations running smoothly during peak hours and support store goals.',
+  ],
+},
+  {
+    id: 2,
+    company: 'Sybor Tech Inc',
+    role: 'Systems Engineer Intern',
+    dates: 'Jan 2026 – Present',
+    location: 'Fort Worth, TX',
+    description: [
+      'Engineered specialized C++ data-routing scripts to ingest raw sensor inputs from microcomputer nodes and stream formatted data packets across stable TCP/IP socket connections.',
+      'Programmed and verified responsive user-input navigation flows utilizing the LVGL graphics library, executing targeted functional and regression tests to ensure flawless database state synchronization.',
+      'Isolated and resolved serial data parsing bugs, communication timeouts, and connectivity drops within an active Agile framework using Jira, maintaining a 99.9% system deployment uptime.',
+      'Authored comprehensive technical configuration manuals, board pinout blueprints, and sprint summaries to translate complex systems layouts into clear team narratives.',
+    ],
+  },
+  {
+    id: 3,
+    company: 'UTD Systems & Security Lab',
+    role: 'Undergraduate Researcher',
+    dates: 'Jan 2026 – May 2026',
+    location: '',
+    description: [
+      'Collaborated with a PhD researcher to analyze compiled software binaries and low-level machine code, systematically identifying system architecture execution vulnerabilities.',
+      'Programmed automated Python validation scripts within a native Linux environment to scan compiled binaries for out-of-bounds write errors (buffer overflows) to defend data execution integrity.',
+    ],
+  },
+  {
+    id: 4,
+    company: 'Walmart',
+    role: 'Sales Associate',
+    dates: 'Aug 2019 – Jun 2026',
+    location: '',
+    description: [
+      'Partnered with logistics, backroom, and floor teams to support project timelines, streamline product tracking data pipelines, and keep product counts accurate.',
+    ],
+  },
+];
+
+const education = [
+  {
+    id: 1,
+    school: 'The University of Texas at Dallas',
+    degree: 'Bachelor of Science in Computer Science',
+    dates: 'May 2026',
+    location: 'Richardson, TX',
+    coursework: [
+      'Computer Networks',
+      'Software Testing & Quality Assurance',
+      'Database Systems',
+      'Artificial Intelligence',
+      'Advanced Data Algorithms',
+      'Programming in UNIX',
+      'Operating Systems',
+      'Computer Graphics',
+    ],
+  },
+  {
+    id: 2,
+    school: 'Tarrant County College',
+    degree: 'Associate of Arts',
+    dates: 'May 2023',
+    location: 'Fort Worth, TX',
+    coursework: [],
   },
 ];
 
@@ -53,6 +142,8 @@ export default function App() {
             <a href="#" className="nav-brand">James Nguyen</a>
             <div className="nav-links">
               <a href="#projects" className="nav-link">Projects</a>
+              <a href="#experience" className="nav-link">Experience</a>
+              <a href="#education" className="nav-link">Education</a>
               <a href="#bio" className="nav-link">Bio</a>
               <a href="#contact" className="nav-link">Contact</a>
             </div>
@@ -78,12 +169,12 @@ export default function App() {
           <section id="bio" className="bio-section border-top">
             <div className="bio-grid">
               <div className="bio-block">
-                <h2 className="bio-title">Education</h2>
+                <h2 className="bio-title">Bio</h2>
                 <p className="bio-text">
-                  <strong>The University of Texas at Dallas</strong> — B.S. in Computer Science. During my time there I focused on building practical software projects and strengthening my foundation in data structures, algorithms, and systems design.
+                  I'm James, a new grad software engineer based in the Dallas–Fort Worth area. I studied Computer Science at UT Dallas, with coursework spanning networks, databases, AI, and systems programming — and I like putting that foundation to work on projects that touch computer vision, backend systems, and low-level programming.
                 </p>
                 <p className="bio-text mt-gap">
-                  <strong>Tarrant County College</strong> — A.A. Completed my general education and foundational coursework here before transferring to UT Dallas.
+                  Outside of coursework, I've built things ranging from a physics engine in C++ to an AI-powered resume tool, and I've spent time in a research lab digging into binary analysis and vulnerability detection. I like understanding how systems work at a deep level, then building something useful on top of that understanding.
                 </p>
               </div>
               <div className="bio-block">
@@ -94,6 +185,29 @@ export default function App() {
               </div>
             </div>
           </section>
+
+          <section id="education" className="education-section border-top">
+            <h2 className="section-heading">Education</h2>
+            <div className="education-list">
+              {education.map((edu) => (
+                <div key={edu.id} className="education-item">
+                  <div className="education-header">
+                    <h3 className="education-school">{edu.school}</h3>
+                    <span className="education-dates">{edu.dates}</span>
+                  </div>
+                  <span className="education-location">{edu.location}</span>
+                  <p className="bio-text mt-gap">{edu.degree}</p>
+                  {edu.coursework.length > 0 && (
+                    <p className="bio-text mt-gap">
+                      <strong>Relevant Coursework:</strong> {edu.coursework.join(', ')}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </section>
+
+          
 
           <section id="projects" className="projects-section border-top">
             <div className="projects-grid">
@@ -121,7 +235,7 @@ export default function App() {
               </ul>
               
               <a href="mailto:jamesn6708@gmail.com" className="contact-email">
-                jamesn6708@gmail.com <span className="wave">👋</span>
+                jamesn6708@gmail.com <span className="wave"></span>
               </a>
             </div>
           </section>
