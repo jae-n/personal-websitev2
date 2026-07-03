@@ -509,3 +509,77 @@ h1, h2, h3, p {
   border-radius: 12px;
   display: block;
 }
+
+/* --- Mobile responsiveness --- */
+@media (max-width: 768px) {
+  .nav-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .bio-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .experience-header,
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-image-wrapper {
+    aspect-ratio: 16 / 9;
+  }
+
+  .social-links-list {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .bio-image {
+    max-width: 100%;
+  }
+
+  main.main-content {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .nav-brand {
+    font-size: 1.1rem;
+  }
+}
