@@ -161,7 +161,7 @@ export default function App() {
         <main className="main-content">
           <section className="hero-section">
             <h1 className="hero-title">
-              Hi, I'm James Nguyen.
+              Hi, I'm James.
             </h1>
             <div className="hero-content">
               <p className="hero-subtitle">
